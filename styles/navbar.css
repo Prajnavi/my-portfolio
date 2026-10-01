@@ -1,0 +1,289 @@
+/* css properies */
+:root {
+    --primary-font:Arial, Helvetica, sans-serief;
+    --primary-color:#2563eb;
+    --primary-dark-color:#1d4ed8;
+    --primary-light-color: #eff6ff;
+
+    --text-color: #0f172a;
+    --secondary-text-color:#475569;
+    --secondary-muted-color:#64748b;
+
+
+    --background-color:#f8fafc;
+    --surface-color:#ffffff;
+    --alter-surface-color:#f1f5f9;
+
+
+    --border-color:#e2e8f0;
+
+    --transition: all 0.3s ease;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--primary-font);
+    background-color: var(--background-color);
+    color:var(--text-color);
+}
+a {
+    text-decoration: none;
+    color: inherit; /*! to change the color depended on the parent*/
+    /* color:var(--text-color); */
+}
+button {
+    font-family: var(--primary-font);
+    /* font-family: inherit; */
+}
+img {
+    /* max-width: 100%; */
+    display: block;
+}
+.container {
+    /* width: 100%; */
+    margin: 0 5%;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color:rgba(248, 250, 252, 0.92);
+    border-bottom: 1px solid var(--border-color);
+}
+.navbar .navbar-container {
+    min-height:76px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap:30px */
+}
+.navbar .navbar-container .logo {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing:1.25px ;
+    color: var(--text-color);
+    transition: var(--transition);
+}
+.navbar .navbar-container .logo:hover {
+    color: var(--primary-color);
+}
+
+.navbar .navbar-container .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+.navbar .navbar-container .nav-menu .nav-link {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px;
+
+}
+.navbar .nav-link:hover, .navbar .nav-link.active {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 6px; /*! to give the space between underline and text*/
+    transition: var(--transition);
+    transform: translateY(-1px);
+
+}
+.navbar .navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar .navbar-actions .theme, .navbar .navbar-actions .menu {
+    border: 1px solid var(--border-color);
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.navbar .navbar-actions .theme:hover, .navbar .navbar-actions .menu:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transition: var(--transition);
+    transform: translateY(-2px); /*! upward for 2px*/
+}
+.navbar .navbar-actions .menu {
+    display: none;
+}
+
+#hidden {
+    display: none;
+    width: 100%;
+    background-color: rgba(248, 250, 252, 0.92);;
+    border-bottom: 1px solid var(--border-color);
+}
+#hidden .navbar-container {
+    width: 100%;
+}
+#hidden .nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+    width: 100%;
+    align-items: center;
+}
+/*  todo : adding smothness to the hidden nav bar */
+
+.footer {
+    background-color: var(--text-color);
+    color: #cbd5e1;
+    padding: 28px 0;
+    font-weight: bold;
+    font-family: monospace;
+}
+.footer .foot-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer .foot-cont p {
+    font-size: 15px;
+}
+.footer .foot-cont .foot-links{
+    display: flex;
+    gap: 20px;
+}
+.footer .foot-cont .foot-links a {
+    font-size: 15px;
+    transition: var(--transition);
+}
+.footer .foot-cont .foot-links a:hover {
+    color:  white;
+    transform: translateY(-2px);
+}
+
+/* dynamic properties */
+@media (max-width: 880px) {
+    .navbar .navbar-actions .menu {
+        display: flex;
+    }
+    .navbar .navbar-container #nav-menu {
+        display: none;
+    }
+}
+@media (min-width: 881px) {
+    #hidden {
+        display: none !important; 
+  }
+}
+@media (max-width:620px) {
+    .footer .foot-cont p {
+        display: none;
+    }
+    .footer .foot-cont .foot-links {
+        width: 100%;
+        justify-content: space-between;
+        padding: 0% 5%;
+    }
+}
+
+
+
+/* ------------ */
+/* dark theme */
+
+body.dark-mode {
+
+    --primary-color: #3b8bee;
+    --primary-dark-color: #3b82f6;
+    --primary-light-color: #172554;
+
+    --text-color: #f1f5f9;
+    --secondary-text-color: #cbd5e1;
+    --secondary-muted-color: #94a3b8;
+
+    --background-color: #0f172a;
+    --surface-color: #172540;
+    --alter-surface-color: #1e293b;
+
+    --border-color: #334155;
+
+    --small-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    --medium-shadow: 0 10px 30px rgba(0, 0, 0, 0.30);
+    --large-shadow: 0 20px 50px rgba(0, 0, 0, 0.40);
+
+    --code-background: #020617;
+    --code-header: #0f172a;
+    --code-text: #e2e8f0;
+    --code-keyword: #c084fc;
+    --code-property: #60a5fa;
+    --code-string: #86efac;
+}
+
+body.dark-mode {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+body.dark-mode .navbar {
+    background-color: rgba(15, 23, 42, 0.92);
+}
+body.dark-mode #hidden {
+    background-color: rgba(15, 23, 42, 0.95);
+}
+body.dark-mode .btn-main {
+    color: #ffffff;
+}
+body.dark-mode .card {
+    color: var(--text-color);
+}
+body.dark-mode input, body.dark-mode textarea {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border-color: var(--border-color);
+}
+body.dark-mode input::placeholder, body.dark-mode textarea::placeholder {
+    color: var(--secondary-muted-color);
+}
+body.dark-mode .code-card {
+    border-color: #334155;
+}
+body.dark-mode .footer {
+    background-color: #020617;
+    color: #94a3b8;
+}
+body.dark-mode a {
+    color: inherit;
+}
+body.dark-mode img {
+    opacity: 0.95;
+}
+body.dark-mode .text-link {
+    color: var(--primary-color);
+}
+body.dark-mode .text-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+body.dark-mode .exp-learning .box .points span {
+    background-color: #232f49ef;
+}
+body.dark-mode .proj span {
+    background-color: var(--background-color);
+}
+body.dark-mode .contact-section .group input, body.dark-mode  .contact-section .group textarea {
+    border:1px solid var(--border-color);
+}
+body.dark-mode #label, body.dark-mode .proj .proj-num {
+    background-color: inherit;
+}

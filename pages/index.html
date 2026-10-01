@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Prajnavi - Aspiring Software Developer, BCA Data Science Graduate">
+
+    <title>Prajnavi | Aspiring Software Developer</title>
+
+    <link rel="icon" href="../assets/icons/person.svg">
+
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/home.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="container navbar-container">
+                <!-- logo -->
+                <a href="./index.html" class="logo">PRAJNAVI</a>
+                <!-- nav link -->
+                <div class="nav-menu" id="nav-menu">
+                    <a href="./index.html" class = "nav-link active">Home</a>
+                    <a href="./about.html" class = "nav-link">About</a>
+                    <a href="./skills.html" class = "nav-link">Skills</a>
+                    <a href="./experience.html" class = "nav-link">Experience</a>
+                    <a href="./projects.html" class = "nav-link">Projects</a>
+                    <a href="./contact.html" class = "nav-link">Contact</a>
+                </div>
+                <!-- right side - theme and menu -->
+                <div class="navbar-actions">
+                    <button class="theme" id="theme">
+                        <!-- <img src="../assets/icons/dark.svg" alt="dark-theme-icon"> -->
+                        🌖︎
+                    </button>
+                    <button class="menu" id="menu" onclick="menuClick()">☰</button>
+                </div>
+            </div>
+        </div>
+        <div class="navbar" id="hidden">
+            <div class="container navbar-container" id="small-menu">
+                <div class="nav-menu">
+                    <a href="./index.html" class = "nav-link active">Home</a>
+                    <a href="./about.html" class = "nav-link">About</a>
+                    <a href="./skills.html" class = "nav-link">Skills</a>
+                    <a href="./experience.html" class = "nav-link">Experience</a>
+                    <a href="./projects.html" class = "nav-link">Projects</a>
+                    <a href="./contact.html" class = "nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main" id="home">
+            <div class="container main-container">
+                <div class="main-content">
+                    <p class="greeting">Hi, I'm Prajnavi 👋 </p>
+                    <h1 class="title">
+                        Aspiring
+                        <span>Software Developer</span>
+                    </h1>
+                    <h2 class="main-subtitle">BCA Data Science Graduate
+                        <span> • </span> 
+                        Currently Learning Python Full Stack 
+                    </h2>
+                    <p class="main-description">
+                        I enjoy building web applications
+                        and practical software solutions, while exploring
+                        Data Science and Cloud Technologies
+
+                    </p>
+                    <div class="main-buttons">
+                        <a href="./projects.html" class="button btn-main">Explore My Projects</a>
+                        <a download href="../assets/documents/prajnavi_resume.pdf" class="button btn-sec-main" target="_blank">Downlaod Resume</a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/Prajnavi" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/prajnavi-910333322/" target="_blank">LinkedIn</a>
+                        <a href="mailto:prajnavimuniyal@gmail.com">Email</a>
+                    </div>
+                </div>
+                <!-- code card -->
+                <div class="visual-card">
+                    <div class="code-card">
+                        <div class="card-header">
+                            <div class="dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <p>developer.js</p>
+                        </div>
+                        <div class="code-content">
+<pre><code><span class="keyward">const</span> aspirig-developer = {
+    <span class="property">name</span>:
+        <span class="string">"Prajnavi"</span>,
+    <span class="property">looking-for</span>:
+        <span class="string">"Software Developer Role"</span>,
+    <span class="property">learning</span>: [
+        <span class="string">"Python"</span>,
+        <span class="string">"HTML CSS JS"</span>
+        <span class="string">"Django"</span>
+    ],
+    <span class="property">additional-intrests</span>: [
+        <span class="string">"Data Science"</span>,
+        <span class="string">"AI and ML"</span>
+        <span class="string">"Cloud"</span>
+    ],
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="what-i-do">
+            <div class="container">
+                <div class="section-heading">
+                    <p id="label">What I do</p>
+                    <h2>Building, Learning & Exploring</h2>
+                </div>
+                <div class="grid">
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <img src="../assets/icons/code.svg">
+                        </div>
+                        <h3>Software Development</h3>
+                        <p>Building responsive applications and practical software solutions using modern web technologies.</p>    
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <img src="../assets/icons/programming.svg">
+                        </div>
+                        <h3>Full Stack Development</h3>
+                        <p>Developing frontend and backend applications with React.js, ASP.NET Core Web API, databases and REST APIs.</p>                    
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <img src="../assets/icons/data.svg">
+                        </div>
+                        <h3>Data Science</h3>
+                        <p>Applying Python, data analysis, visualization and machine learning concepts to academic projects.</p>    
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <img src="../assets/icons/cloud.svg">
+                        </div>
+                        <h3>Cloud & API's</h3>
+                        <p>Working with APIs, AWS services and cloud-based applications while exploring scalable application development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="experience">
+            <div class="container">
+                <div class="section-heading">
+                    <p id="label">Experience</p>
+                    <h2>Software Development Experience</h2>
+                </div>
+                <div class="exp-view">
+                    <div class="info">
+                        <p class="exp-company">Fidrox Technologies Pvt. Ltd.</p>
+                        <h3> Project Intern - Full Stack</h3>
+                        <p class="exp-duration">January 2026 - May 2026</p>
+                    </div>
+                    <div class="summary">
+                        <p> Contributed to a real-world Contract Management System by working on responsive UI, React components, ASP.NET Core Web API integration, testing and performance improvements.</p>
+                        <a href="experience.html" class="text-link">View Experience</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="project">
+            <div class="container">
+                <div class="section-heading">
+                    <p id="label">My works</p>
+                    <h2>Project I've built</h2>
+                    <p id="sec-content">A selection of projects where I've applied frontend technologies, backend technologies, and machine learning to build practical solutions.</p>
+                </div>
+                <div class="grid">
+                    <div class="card">
+                        <div class="proj-image">
+                            <img src="../assets/images/knight-bite.png" alt="">
+                        </div>
+                        <div class="proj-content">
+                            <p class="proj-category">WEB DEVELOPMENT</p>
+                            <h3>Knight Bite - Static Website</h3>
+                            <p class="proj-cont-summary">Recreated the older Knight Bite website as a static web page and developed an updated static home page to understand a layout.</p>
+                            <a href="./projects.html" class="text-link">View Project</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="proj-image">
+                            <img src="../assets/images/student-data-hub.png" alt="">
+                        </div>
+                        <div class="proj-content">
+                            <p class="proj-category">FULL STACK DEVELOPMENT</p>
+                            <h3>Student Data Hub - CRUD</h3>
+                            <p class="proj-cont-summary">A full-stack student management application for viewing and managing student records through a React frontend and ASP.NET Core Web API.</p>
+                            <a href="./projects.html" class="text-link">View Project</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="proj-image">
+                            <img src="../assets/images/arecanut.jpg" alt="">
+                        </div>
+                        <div class="proj-content">
+                            <p class="proj-category">MACHINE LEARNING</p>
+                            <h3>Arecanut Detection Using Satellite Imagery</h3>
+                            <p class="proj-cont-summary">A machine learning project focused on detecting arecanut plantations from satellite imagery and comparing different ML learning approaches.</p>
+                            <a href="./projects.html" class="text-link">View Project</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="proj-button">
+                    <a href="projects.html" class="button btn-main">View All Projects</a>
+                </div>
+            </div>
+        </div>
+        <!-- get touch -->
+        <div class="home-get-touch">
+            <div class="container">
+                <div class="get-content">
+                    <p id="label">Let's Connect</p>
+                    <h2>Intrested in working together?</h2>
+                    <p id="summary">I'm currently building my skills in Python Full Stack Development and looking for opportunities to grow as a Software Developer.</p>
+                    <a href="./contact.html" class="button btn-main">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="container foot-cont">
+                <p>Prajnavi : prajnavimuniyal@gmail.com</p>
+                <div class="foot-links">
+                    <a href="https://github.com/Prajnavi" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/prajnavi-910333322/" target="_blank">LinkedIn</a>
+                    <a href="mailto:prajnavimuniyal@gmail.com">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

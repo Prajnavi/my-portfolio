@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Prajnavi - Aspiring Software Developer, BCA Data Science Graduate">
+
+    <title>Prajnavi | Aspiring Software Developer</title>
+
+    <link rel="icon" href="../assets/icons/person.svg">
+
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/project.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="container navbar-container">
+                <!-- logo -->
+                <a href="./index.html" class="logo">PRAJNAVI</a>
+                <!-- nav link -->
+                <div class="nav-menu" id="nav-menu">
+                    <a href="./index.html" class = "nav-link">Home</a>
+                    <a href="./about.html" class = "nav-link">About</a>
+                    <a href="./skills.html" class = "nav-link">Skills</a>
+                    <a href="./experience.html" class = "nav-link">Experience</a>
+                    <a href="./projects.html" class = "nav-link active">Projects</a>
+                    <a href="./contact.html" class = "nav-link">Contact</a>
+                </div>
+                <!-- right side - theme and menu -->
+                <div class="navbar-actions">
+                    <button class="theme" id="theme">
+                        <!-- <img src="../assets/icons/dark.svg" alt="dark-theme-icon"> -->
+                        🌖︎
+                    </button>
+                    <button class="menu" id="menu" onclick="menuClick()">☰</button>
+                </div>
+            </div>
+        </div>
+        <div class="navbar" id="hidden">
+            <div class="container navbar-container" id="small-menu">
+                <div class="nav-menu">
+                    <a href="./index.html" class = "nav-link">Home</a>
+                    <a href="./about.html" class = "nav-link">About</a>
+                    <a href="./skills.html" class = "nav-link">Skills</a>
+                    <a href="./experience.html" class = "nav-link">Experience</a>
+                    <a href="./projects.html" class = "nav-link active">Projects</a>
+                    <a href="./contact.html" class = "nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main">
+            <div class="container">
+                <span id="label">MY work</span>
+                <h1>Projects</h1>
+                <p>A collection of academic and practical projects covering software development, data science, machine learning and cloud computing.</p>
+            </div>
+        </div>
+
+        <div class="proj-intro">
+            <div class="container">
+                <div class="proj-intro-content">
+                    <span id="label">Building through practise</span>
+                    <h2 id="head">Turning Ideas Into Solutions</h2>
+                    <p>My projects have helped me understand and apply programming, software development, data analysis, machine learning and cloud computing concepts.</p>
+                </div>
+            </div>
+        </div>
+        <div class="proj">
+            <div class="grid container">
+                <div class="card" id="frontend">
+                    <div class="proj-head">
+                        <span class="proj-category" id="label">FRONTEND</span>
+                        <span class="proj-num">01</span>
+                    </div>
+                    <div class="proj-body">
+                        <h3>Weather Application</h3>
+                        <img src="../assets/images/weather.png" alt="">
+                        <p class="proj-discri">A weather application that retrieves weather information through an external API and updates the interface based on the selected city and weather conditions.</p>
+                        <div class="proj-high">
+                            <span>API Integration</span>
+                            <span>Dynamic UI</span>
+                            <span>React Hooks</span>
+                            <span>Async/Await</span>
+                        </div>
+                        <div class="proj-tech">
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>OpenWeather API</span>
+                            <span>React.js</span>
+                        </div>
+                    </div>
+                    <div class="proj-foot">
+                        <a href="https://resonant-bonbon-07811a.netlify.app" class="proj-link" target="_blank">View Project</a>
+                        <a href="https://github.com/Prajnavi/weather-application" class="proj-link" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="card" id="full-stack">
+                    <div class="proj-head">
+                        <span class="proj-category" id="label">FULL STACK DEVELOPMENT</span>
+                        <span class="proj-num">02</span>
+                    </div>
+                    <div class="proj-body">
+                        <h3>Student Data Hub</h3>
+                        <img src="../assets/images/student-data-hub.png" alt="">
+                        <p class="proj-discri">A full-stack student management application for viewing and managing student records through a React frontend and ASP.NET Core Web API.</p>
+                        <div class="proj-high">
+                            <span>CRUD Operation</span>
+                            <span>REST APIs</span>
+                            <span>Database Integration</span>
+                        </div>
+                        <div class="proj-tech">
+                            <span>ASP.NET Core</span>
+                            <span>SQL Server</span>
+                            <span>Entity Framework Core</span>
+                            <span>React.js</span>
+                        </div>
+                    </div>
+                    <div class="proj-foot">
+                        <a href="https://drive.google.com/file/d/1GvJfEScwHSVsWVpDXOkX5Ree7zo6T0_W/view?usp=sharing" target="_blank" class="proj-link">View Project</a>
+                        <!-- <a href="#" class="proj-link">GitHub</a> -->
+                    </div>
+                </div>
+
+                <div class="card" id="python">
+                    <div class="proj-head">
+                        <span class="proj-category" id="label">MACHINE LEARNING</span>
+                        <span class="proj-num">03</span>
+                    </div>
+                    <div class="proj-body">
+                        <h3>Arecanut Detection Using Satellite Imagery</h3>
+                        <img src="../assets/images/arecanut.jpg" alt="">
+                        <p class="proj-discri">A machine learning project focused on detecting arecanut plantations from satellite imagery and comparing traditional machine learning and deep learning approaches.</p>
+                        <div class="proj-high">
+                            <span>Image Processing</span>
+                            <span>Feature Extraction</span>
+                            <span>CNN</span>
+                            <span>YOLOv8</span>
+                        </div>
+                        <div class="proj-tech">
+                            <span>Python</span>
+                            <span>ML</span>
+                            <span>CNN</span>
+                            <span>YOLOv8</span>
+                        </div>
+                    </div>
+                    <div class="proj-foot">
+                        <a href="https://drive.google.com/file/d/18znxvI9vokDxZu23405gznobpH1YnJPS/view?usp=sharing" target="_blank" class="proj-link">View Project</a>
+                        <a href="https://github.com/Prajnavi/Arecanut_Detection_Satellite_Imagery" target="_blank" class="proj-link">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="card" id="frontend">
+                    <div class="proj-head">
+                        <span class="proj-category" id="label">WEB DEVELOPMENT</span>
+                        <span class="proj-num">04</span>
+                    </div>
+                    <div class="proj-body">
+                        <h3>Knight Bite - Static Recreation</h3>
+                        <img src="../assets/images/knight-bite-old.png" alt="">
+                        <p class="proj-discri">A static website recreation of the older Knight Bite website built to practice webpage structure, styling, layouts, and design.</p>
+                        <div class="proj-high">
+                            <span>Static</span>
+                            <span>Page Layout</span>
+                            <!-- <span></span> -->
+                        </div>
+                        <div class="proj-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    <div class="proj-foot">
+                        <a href="https://drive.google.com/drive/folders/1ZXm5Do_uQt_VNlBmnRXU3xCf3uvHdKF8?usp=sharing" target="_blank" class="proj-link">View Project</a>
+                        <!-- <a href="#" class="proj-link">GitHub</a> -->
+                    </div>
+                </div>
+
+                <div class="card" id="frontend">
+                    <div class="proj-head">
+                        <span class="proj-category" id="label">Web DEVELOPMENT</span>
+                        <span class="proj-num">05</span>
+                    </div>
+                    <div class="proj-body">
+                        <h3>Knight Bite - Updated Home Page</h3>
+                        <img src="../assets/images/knight-bite.png" alt="">
+                        <p class="proj-discri">A redesigned static home page inspired by Knight Bite, focusing on a cleaner layout, responsive design, and frontend styling.</p>
+                        <div class="proj-high">
+                            <span>Frontend Styling</span>
+                            <span>Static Page</span>
+                        </div>
+                        <div class="proj-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    <div class="proj-foot">
+                        <a href="https://drive.google.com/drive/folders/1Wo9i0TyvaIwl1p-tKTQOPniHpcF-Y938?usp=sharing" target="_blank" class="proj-link">View Project</a>
+                        <!-- <a href="#" class="proj-link">GitHub</a> -->
+                    </div>
+                </div>
+                <div class="card" id="frontend">
+                    <div class="proj-head">
+                        <span class="proj-category" id="label">WEB DEVELOPMENT</span>
+                        <span class="proj-num">06</span>
+                    </div>
+                    <div class="proj-body">
+                        <h3>Facebook Login Page</h3>
+                        <img src="../assets/images/facebook.png" alt="">
+                        <p class="proj-discri">A responsive recreation of a Facebook login interface built to practice layouts, form styling, spacing, and responsive web design.</p>
+                        <div class="proj-high">
+                            <span>Responsive UI</span>
+                            <span>Mobile Design</span>
+                            <span>CSS Layout</span>
+                            <span>Form</span>
+                        </div>
+                        <div class="proj-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                    <div class="proj-foot">
+                        <a href="https://drive.google.com/drive/folders/1oXtBIVbzT-voA0GyCm4TWfUSIvf9Jg2y?usp=sharing" target="_blank" class="proj-link">View Project</a>
+                        <!-- <a href="#" class="proj-link">GitHub</a> -->
+                    </div>
+                </div>
+
+                <div class="card" id="frontend">
+                    <div class="proj-head">
+                        <span class="proj-category" id="label">WEB DEVELOPMENT</span>
+                        <span class="proj-num">07</span>
+                    </div>
+                    <div class="proj-body">
+                        <h3>Biryani By Kilo</h3>
+                        <img src="../assets/images/briyani-by-kilo.png" alt="">
+                        <p class="proj-discri">A static food website home interface recreated to practice webpage structure, and visual styling.</p>
+                        <div class="proj-high">
+                            <span>Static</span>
+                            <span>Page Layout</span>
+                            <!-- <span></span> -->
+                        </div>
+                        <div class="proj-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    <div class="proj-foot">
+                        <a href="https://drive.google.com/drive/folders/1UThKzofujWnks5okV3lelrnPWNsiaKwO?usp=sharing" target="_blank" class="proj-link">View Project</a>
+                        <!-- <a href="#" class="proj-link">GitHub</a> -->
+                    </div>
+                </div>
+
+                <div class="card" id="frontend">
+                    <div class="proj-head">
+                        <span class="proj-category" id="label">WEB DEVELOPMENT</span>
+                        <span class="proj-num">08</span>
+                    </div>
+                    <div class="proj-body">
+                        <h3>Blinkit Opening Page</h3>
+                        <img src="../assets/images/blinkit.png" alt="">
+                        <p class="proj-discri">A static recreation of a Blinkit opening page focused on practicing visual layouts, and frontend styling.</p>
+                        <div class="proj-high">
+                            <span>Static</span>
+                            <span>Page Layout</span>
+                            <!-- <span></span> -->
+                        </div>
+                        <div class="proj-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    <div class="proj-foot">
+                        <a href="https://drive.google.com/drive/folders/1ZshjeHNU-B9Dz53leRFDnQGIfDck6xAT?usp=sharing" target="_blank" class="proj-link">View Project</a>
+                        <!-- <a href="#" class="proj-link">GitHub</a> -->
+                    </div>
+                </div>
+
+                <div class="card" id="frontend">
+                    <div class="proj-head">
+                        <span class="proj-category" id="label">WEB DEVELOPMENT</span>
+                        <span class="proj-num">09</span>
+                    </div>
+                    <div class="proj-body">
+                        <h3>Amazon Opening Page</h3>
+                        <img src="../assets/images/amazon-home.png" alt="">
+                        <p class="proj-discri">A static recreation of an Amazon opening page developed to practice webpage structure and styling.</p>
+                        <div class="proj-high">
+                            <span>Static</span>
+                            <span>Page Layout</span>
+                            <!-- <span></span> -->
+                        </div>
+                        <div class="proj-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    <div class="proj-foot">
+                        <a href="https://drive.google.com/drive/folders/1xMOky_G9yUuwTL1rQZ3TMOYrt-hE1VjI?usp=sharing" target="_blank" class="proj-link">View Project</a>
+                        <!-- <a href="#" class="proj-link">GitHub</a> -->
+                    </div>
+                </div>
+
+                <div class="card" id="frontend">
+                    <div class="proj-head">
+                        <span class="proj-category" id="label">WEB DEVELOPMENT</span>
+                        <span class="proj-num">10</span>
+                    </div>
+                    <div class="proj-body">
+                        <h3>Netflix Login Page</h3>
+                        <img src="../assets/images/netflix.png" alt="">
+                        <p class="proj-discri">A static recreation of an Netflix Login Page developed to practice webpage structure, navigation layouts, and styling.</p>
+                        
+                        <div class="proj-high">
+                            <span>Static</span>
+                            <span>Page Layout</span>
+                            <!-- <span></span> -->
+                        </div>
+                        <div class="proj-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    <!-- <br><br>
+                    <br><br> <p></p><br> -->
+                    <div class="proj-foot">
+                        <a href="https://drive.google.com/drive/folders/1xMOky_G9yUuwTL1rQZ3TMOYrt-hE1VjI?usp=sharing" target="_blank" class="proj-link">View Project</a>
+                        <!-- <a href="#" class="proj-link">GitHub</a> -->
+                    </div>
+                </div>
+
+                <div class="card" id="python data-analysis">
+                    <div class="proj-head">
+                        <span class="proj-category" id="label">Data Analysis</span>
+                        <span class="proj-num">11</span>
+                    </div>
+                    <div class="proj-body">
+                        <h3>Stock Data Analysis</h3>
+                        <img src="../assets/images/stock-data.png" alt="">
+                        <p class="proj-discri">An analysis of stock data from companies across Finance, Infrastructure, and Healthcare sectors to identify trends and study future price movements.</p>
+                        
+                        <div class="proj-high">
+                            <span>Trend Analysis</span>
+                            <span>Data Visualization</span>
+                            <span>Prediction</span>
+                        </div>
+                        <div class="proj-tech">
+                            <span>Python</span>
+                            <span>Excel</span>
+                            <span>Data Analysis</span>
+                        </div>
+                    </div>
+                    <!-- <br><br> <p></p> -->
+                    <div class="proj-foot">
+                        <a href="https://drive.google.com/file/d/155SDH4i8_7qGp7i-W-SGXToTnoZRAvoM/view?usp=sharing" target="_blank" class="proj-link">View Project</a>
+                        <a href="https://drive.google.com/drive/folders/1Qz_iQxWr7lMA_fv9uNoNyQj9g3U0CCzd?usp=sharing" target="_blank" class="proj-link">View Project Files</a>
+                        <!-- <a href="#" class="proj-link">GitHub</a> -->
+                    </div>
+                </div>
+
+                <div class="card" id="python data-analysis">
+                    <div class="proj-head">
+                        <span class="proj-category" id="label">Real Time Analytics</span>
+                        <span class="proj-num">12</span>
+                    </div>
+                    <div class="proj-body">
+                        <h3>CitySafety</h3>
+                        <img src="../assets/images/citysafety.png" alt="">
+                        <p class="proj-discri">A real-time weather and air-quality monitoring system that streams live data, performs predictive analysis, and visualizes urban weather and visibility insights through an interactive dashboard.</p>
+                        <div class="proj-high">
+                            <span>Dashboard</span>
+                            <span>Data Streaming</span>
+                            <span>Prediction</span>
+                        </div>
+                        <div class="proj-tech">
+                            <span>Python</span>
+                            <span>Apache Superset</span>
+                            <span>Apache Kafka</span>
+                        </div>
+                    </div>
+                    <div class="proj-foot">
+                        <a href="https://drive.google.com/file/d/1fhYG1z7ENdfIyVYnv4RM1tXcTzC6tr5M/view?usp=sharing" target="_blank" class="proj-link">View Project</a>
+                        <a href="https://drive.google.com/drive/folders/1iM4BrqQnkSR4FmglmyA2w0HtpNApfF_O?usp=sharing" target="_blank" class="proj-link">View Project Files</a>
+                        <!-- <a href="#" class="proj-link">GitHub</a> -->
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="get-touch">
+            <div class="container">
+                <div class="get-content">
+                    <p id="label">Lets's connect</p>
+                    <h2>Have a project or opportunity?</h2>
+                    <p id="summary">I'm interested in opportunities where I can continue learning and contribute to software projects.</p>
+                    <a href="./contact.html" class="button btn-main">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="container foot-cont">
+                <p>Prajnavi : prajnavimuniyal@gmail.com</p>
+                <div class="foot-links">
+                    <a href="https://github.com/Prajnavi" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/prajnavi-910333322/" target="_blank">LinkedIn</a>
+                    <a href="mailto:prajnavimuniyal@gmail.com">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    
+</body>
+</html>

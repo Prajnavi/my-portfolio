@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Prajnavi - Aspiring Software Developer, BCA Data Science Graduate">
+
+    <title>Prajnavi | Aspiring Software Developer</title>
+
+    <link rel="icon" href="../assets/icons/person.svg">
+
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/skills.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="container navbar-container">
+                <!-- logo -->
+                <a href="./index.html" class="logo">PRAJNAVI</a>
+                <!-- nav link -->
+                <div class="nav-menu" id="nav-menu">
+                    <a href="./index.html" class = "nav-link">Home</a>
+                    <a href="./about.html" class = "nav-link">About</a>
+                    <a href="./skills.html" class = "nav-link active">Skills</a>
+                    <a href="./experience.html" class = "nav-link">Experience</a>
+                    <a href="./projects.html" class = "nav-link">Projects</a>
+                    <a href="./contact.html" class = "nav-link">Contact</a>
+                </div>
+                <!-- right side - theme and menu -->
+                <div class="navbar-actions">
+                    <button class="theme" id="theme">
+                        <!-- <img src="../assets/icons/dark.svg" alt="dark-theme-icon"> -->
+                        🌖︎
+                    </button>
+                    <button class="menu" id="menu" onclick="menuClick()">☰</button>
+                </div>
+            </div>
+        </div>
+        <div class="navbar" id="hidden">
+            <div class="container navbar-container" id="small-menu">
+                <div class="nav-menu">
+                    <a href="./index.html" class = "nav-link">Home</a>
+                    <a href="./about.html" class = "nav-link">About</a>
+                    <a href="./skills.html" class = "nav-link active">Skills</a>
+                    <a href="./experience.html" class = "nav-link">Experience</a>
+                    <a href="./projects.html" class = "nav-link">Projects</a>
+                    <a href="./contact.html" class = "nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main skill">
+            <div class="container">
+                <p id="label">Technical skills</p>
+                <h1>Technologies and Tools I've Worked With</h1>
+                <p>A collection of technologies and tools I've worked with through my internship, academic projects and current Python Full Stack training.</p>
+            </div>
+        </div>
+        <div class="main skills-intro">
+            <div class="conatainer skils-grid">
+                <div>
+                    <p id="label">MY technical Profile</p>
+                    <h2>Software Development at the Core</h2>
+                </div>
+                <div>
+                    <p> My primary focus is software development, particularly building web applications, working with APIs and databases, and understanding full-stack application flow. </p>
+                    <p>My Data Science background adds experience with Python, data analysis, and visualization.</p>
+                </div>
+            </div>
+        </div>
+        <div class="main skill-sec">
+            <div class="container">
+                <div class="sec-head">
+                    <p id="label">Core Technologies</p>
+                    <h2>My Technical Skills</h2>
+                </div>
+                <div class="skill-grid">
+
+                    <div class="card">
+                        <div class="head">
+                            <span class="icon">
+                                <img src="../assets/icons/programming.svg" alt="">
+                            </span>
+                            <div>
+                                <span class="num">01</span>
+                                <h3>Programming</h3>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>C#</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="head">
+                            <span class="icon">
+                                <img src="../assets/icons/code.svg" alt="">
+                            </span>
+                            <div>
+                                <span class="num">02</span>
+                                <h3>Frontend Development</h3>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <span>HTML5</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>                                                             
+                            <span>Material UI</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="head">
+                            <span class="icon">
+                                <img src="../assets/icons/programming.svg" alt="">
+                            </span>
+                            <div>
+                                <span class="num">03</span>
+                                <h3>Backend Development</h3>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <span>ASP.Net Core Web API</span>
+                            <span>Entity Framework Core</span>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="head">
+                            <span class="icon">
+                                <img src="../assets/icons/data.svg" alt="">
+                            </span>
+                            <div>
+                                <span class="num">04</span>
+                                <h3>Databases</h3>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <span>Oracle SQL</span>
+                            <span>SQL Server</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="head">
+                            <span class="icon">
+                                <img src="../assets/icons/data-2.svg" alt="">
+                            </span>
+                            <div>
+                                <span class="num">05</span>
+                                <h3>Data Science</h3>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <span>Python</span>
+                            <span>Data Visualization</span>
+                            <span>Data Analysis</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="head">
+                            <span class="icon">
+                                <img src="../assets/icons/cloud.svg" alt="">
+                            </span>
+                            <div>
+                                <span class="num">06</span>
+                                <h3>Cloud ands DeOps</h3>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <span>AWS</span>
+                            <span>EC2</span>
+                            <span>S3</span>
+                            <span>Docker</span>
+                            <span>Linux CLI</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="head">
+                            <span class="icon">
+                                <img src="../assets/icons/test.svg" alt="">
+                            </span>
+                            <div>
+                                <span class="num">07</span>
+                                <h3>Testing</h3>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <span>Jest</span>
+                            <span>Swagger</span>
+                            <span>Selenium</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="head">
+                            <span class="icon">
+                                <img src="../assets/icons/programming.svg" alt="">
+                            </span>
+                            <div>
+                                <span class="num">08</span>
+                                <h3>Development Tools</h3>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>VS Code</span>
+                            <span>Visual Studio</span>
+                            <span>SSMS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="get-touch">
+            <div class="container">
+                <div class="get-content">
+                    <p id="label">Next</p>
+                    <h2>Want to see these skills in action?</h2>
+                    <p id="summary">Explore the projects where I've applied my technical knowledge.</p>
+                    <a href="./projects.html" class="button btn-main">View My Projects</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="container foot-cont">
+                <p>Prajnavi : prajnavimuniyal@gmail.com</p>
+                <div class="foot-links">
+                    <a href="https://github.com/Prajnavi" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/prajnavi-910333322/" target="_blank">LinkedIn</a>
+                    <a href="mailto:prajnavimuniyal@gmail.com">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,271 @@
+:root {
+    --primary-font:Arial, Helvetica, sans-serief;
+    --primary-color:#2563eb;
+    --primary-dark-color:#1d4ed8;
+    --primary-light-color: #eff6ff;
+
+    --text-color: #0f172a;
+    --secondary-text-color:#475569;
+    --secondary-muted-color:#64748b;
+
+
+    --background-color:#f8fafc;
+    --surface-color:#ffffff;
+    --alter-surface-color:#f1f5f9;
+
+
+    --border-color:#e2e8f0;
+
+    --small-radius:8px;
+    --medium-radius:14px;
+    --large-radius:20px;
+
+    --small-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+    --medium-shadow:0 10px 30px rgba(15, 23, 42, 0.08);
+    --large-shadow:0 20px 50px rgba(15, 23, 42, 0.12);
+
+    --transition: all 0.3s ease;
+
+    --code-background:#0f172a;
+    --code-header: #1e293b;
+    --code-text:  #e2e8f0;
+    --code-keyword: #c084fc;
+    --code-property: #60a5fa;
+    --code-string:#86efac;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    /* min-width: calc(100vh -76px); */
+    display: flex;
+    align-items: center;
+    padding:90px 5% 100px;
+    background-color: var(--surface-color);
+    /* overflow: hidden; */
+}
+
+.main  .container {
+    display: grid;
+    align-items: center;
+    gap: 10px;
+}
+
+/* main */
+.main  h1 {
+    font-size: clamp(45px, 4vw, 55px);
+    margin-top: -10px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-left: -2px;
+    margin-bottom: 20px;
+}
+.main  p {
+    color: var(--secondary-muted-color);
+    font-size: 17px;
+    /* font-weight: bold; */
+    transition: var(--transition);
+    margin-bottom: 20px;
+}
+
+
+/* common button */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    padding: 0 22px;
+    border-radius: var(--small-radius);
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: var(--transition)
+}
+.button:hover{
+    transform: translateY(-3px);
+}
+.btn-main {
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0px 8px 20px rgba(37, 99, 235, 0.20);
+    /* box-shadow: var(--medium-shadow); */
+}
+.btn-main:hover {
+    background-color: var(--primary-dark-color);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.28);
+}
+
+/* .section-heading {
+    margin-bottom: 50px;
+} */
+#label {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1.1px;
+    font-weight: bolder;
+    font-size: 14px;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+
+.skill {
+    padding-left:20%;
+    padding-right: 20%;
+}
+.skills-intro {
+    background-color: var(--background-color);
+    padding: 70px 10%;
+}
+.skills-intro h2 {
+    font-size: 40px;
+    line-height: 1.3;
+    margin-left: -2px;
+    margin-bottom: 15px;
+}
+.skills-intro p {
+    line-height: 1.5;
+}
+.skills-intro .skils-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+
+.skill-sec .sec-head h2{
+    font-size: 38px;
+    margin: 20px 0 15px;
+    letter-spacing: 0.5;
+}
+.skill-sec .skill-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+.skill-sec .skill-grid .card {
+    padding: 30px;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--medium-radius);
+    transition: var(--transition);
+}
+.skill-sec .skill-grid .card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary-dark-color);
+    box-shadow: var(--medium-shadow);
+}
+.skill-sec .skill-grid .card .head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.skill-sec .skill-grid .card .icon{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    border-radius: var(--small-radius);
+    background-color: var(--surface-color);
+}
+.skill-sec .skill-grid .card .icon img {
+    height: 28px;
+    width: 28px;
+}
+
+.skill-sec .skill-grid .card .num {
+    display: block;
+    color: var(--primary-color);
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+.skill-sec .skill-grid .card h3 {
+    font-size: 20px;
+    line-height: 1.3;
+}
+.skill-sec .skill-grid .card .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+.skill-sec .skill-grid .card .list span {
+    display: flex;
+    align-items: center;
+    min-height: 34px;
+    padding: 0 12px;
+    border: 1px solid var(--border-color);
+    background-color: var(--surface-color);
+    border-radius: var(--small-radius);
+    color:var(--secondary-text-color);
+    font-weight: 500;
+    transition: var(--transition);
+    font-family: monospace;
+}
+.skill-sec .skill-grid .card .list span:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-dark-color);
+    transform: translateY(-2px);
+}
+
+.get-touch {
+    background-color: var(--background-color);
+    padding: 100px 5%;
+}
+.get-touch .get-content {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 70px 5%;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--large-radius);
+    box-shadow: var(--small-shadow);
+    transition: var(--transition);
+}
+.get-touch .get-content:hover {
+    transform: translateY(-7px);
+    border: 2px solid var(--border-color);
+    box-shadow: var(--medium-shadow);
+}
+.get-touch .get-content h2 {
+    font-size: clamp(30px, 4vw, 45px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+.get-touch .get-content #summary {
+    margin: 0 auto 28px;
+    color: var(--secondary-muted-color);
+    line-height: 1.8;
+}
+#certi-exp {
+    width: fit-content;
+    margin-top: 15px;
+}
+
+/* responsiveness */
+@media (max-width:800px) {
+    .skills-intro .skils-grid {
+        grid-template-columns: auto;
+    }
+    .skill {
+        padding-left:10%;
+        padding-right: 10%;
+    }
+    .button {
+        width: 100%;
+    }
+    .skill-sec .skill-grid {
+        grid-template-columns: auto;
+    }
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Prajnavi - Aspiring Software Developer, BCA Data Science Graduate">
+
+    <title>Prajnavi | Aspiring Software Developer</title>
+
+    <link rel="icon" href="../assets/icons/person.svg">
+
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/about.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="container navbar-container">
+                <!-- logo -->
+                <a href="./index.html" class="logo">PRAJNAVI</a>
+                <!-- nav link -->
+                <div class="nav-menu" id="nav-menu">
+                    <a href="./index.html" class = "nav-link">Home</a>
+                    <a href="./about.html" class = "nav-link active">About</a>
+                    <a href="./skills.html" class = "nav-link">Skills</a>
+                    <a href="./experience.html" class = "nav-link">Experience</a>
+                    <a href="./projects.html" class = "nav-link">Projects</a>
+                    <a href="./contact.html" class = "nav-link">Contact</a>
+                </div>
+                <!-- right side - theme and menu -->
+                <div class="navbar-actions">
+                    <button class="theme" id="theme">
+                        <!-- <img src="../assets/icons/dark.svg" alt="dark-theme-icon"> -->
+                        🌖︎
+                    </button>
+                    <button class="menu" id="menu" onclick="menuClick()">☰</button>
+                </div>
+            </div>
+        </div>
+        <div class="navbar" id="hidden">
+            <div class="container navbar-container" id="small-menu">
+                <div class="nav-menu">
+                    <a href="./index.html" class = "nav-link">Home</a>
+                    <a href="./about.html" class = "nav-link active">About</a>
+                    <a href="./skills.html" class = "nav-link">Skills</a>
+                    <a href="./experience.html" class = "nav-link">Experience</a>
+                    <a href="./projects.html" class = "nav-link">Projects</a>
+                    <a href="./contact.html" class = "nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main main-head">
+            <div class="container main-container">
+                <p id="label">About Me</p>
+                <h1>Building skills, exploring ideas and growing as developer</h1>
+                <p>A little about my background, my journey into software development, and the areas I'm interested in exploring.</p>
+            </div>
+        </div>
+
+        <div class="main intro">
+            <div class="container grid">
+                <div class="intro-head">
+                    <p id="label">Who I Am</p>
+                    <h2>
+                        Software Development with  a Data Science background
+                    </h2>
+                </div>
+                <div class="intro-content">
+                    <p>I'm Prajnavi, an aspiring Software Developer with a background in Data Science.</p>
+                    <p>I enjoy building practical applications, learning how different parts of a software system work together, and improving my development skills through hands-on projects.</p>
+                    <p>My academic background in Data Science has also given me a knowledge in data analysis, Machine Learning, and data-driven solutions.</p>
+                    <p>Currently, I'm pursuing Python Full Stack Development training at PySpiders to strengthen my skills in application development and prepare for software development opportunities.</p>
+                </div>
+            </div>
+        </div>
+        <div class="main about-focus">
+            <div class="container">
+                <div class="sec-head">
+                    <p id="label">Current focus</p>
+                    <h2>What I'm working on now</h2>
+                    <p>I'm continuously developing my technical skills through learning and practical projects.</p>
+                </div>
+                <div class="grid">
+                    <div class="card">
+                        <div class="card-num">
+                            01
+                        </div>
+                        <h3>Python Full Stack Development</h3>
+                        <p>
+                            Currently pursuing Python Full Stack Development training at QSpiders and strengthening my understanding of full-stack application development.
+                            Currently completed Python, Web technology and OracleSQL.
+                        </p>
+                        <div class="tech">
+                            <span>Django</span>
+                            <span id="done">Python</span>
+                            <span id="done">HTML</span>
+                            <span id="done">CSS</span>
+                            <span id="done">JavaScript</span>
+                            <span>React.js</span>
+                            <span id="done">OracleSQL</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-num">
+                            02
+                        </div>
+                        <h3>Software Development</h3>
+                        <p>Improving my skills in frontend development, backend APIs, databases, application architecture and problem solving.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-journey">
+            <div class="container">
+                <div class="sec-head">
+                    <p id="label">MY journey</p>
+                    <h2>My Journey into Software Development</h2>
+                </div>
+            </div>
+            <div class="journey-timeline">
+                <div class="item">
+                    <div class="num">01</div>
+                    <div class="content">
+                        <span id="label">Education</span>
+                        <h3>BCA - Data Science</h3>
+                        <p class="info">Chanakya University, Bengaluru</p>
+                        <p>Built a foundation in programming, databases, data science, software and related technologies through my undergraduate studies.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="num">02</div>
+                    <div class="content">
+                        <span id="label">Projects</span>
+                        <h3>Learning Through Practical Projects</h3>
+                        <p class="info">Chanakya University, Bengaluru</p>
+                        <p>As a part of BCA, I worked on projects covering full-stack development, cloud computing, data visualization and data analyse.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="num">03</div>
+                    <div class="content">
+                        <span id="label">Experience</span>
+                        <h3>Full-Stack Development Internship</h3>
+                        <p class="info">Fidrox Technologies Pvt. Ltd.</p>
+                        <p>Gained hands-on experience contributing to a Contract Management System and working with frontend, backend, database and testing technologies.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="num">04</div>
+                    <div class="content">
+                        <span id="label">Current</span>
+                        <h3>Python Full Stack</h3>
+                        <p class="info">PySpiders</p>
+                        <p>Currently strengthening my software development skills through Python Full Stack (Django, Python, React, Web Technologies, OracleSQL) training and practical learning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main open">
+            <div class="container">
+                <div class="sec-head">
+                    <p id="label">Open to opportunities</p>
+                    <h2>Looking for my next learning opportunity.</h2>
+                    <p>I'm interested in programming or software development roles where I can work with modern technologies, build practical applications and continue growing as a developer.</p>
+                    <div class="tech">
+                        <span>Full-Stack Development</span>
+                        <span>Python</span>
+                        <span>Frontend Development</span>
+                        <span>Backend Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main edu">
+            <div class="container">
+                <div class="sec-head">
+                    <p id="label">Education</p>
+                    <h2>Academic Background</h2>
+                </div>
+                <div class="card">
+                    <div class="item">
+                        <span class="edu-period">2022 - 2026</span>
+                        <h3>Bachelor of Computer Applications</h3>
+                        <h4>Data Science</h4>
+                        <p>Chanakya University, Bengaluru</p>
+                    </div>
+                    <div class="edu-result">
+                        <span>CGPA</span>
+                        <strong>9.51</strong>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="item">
+                        <span class="edu-period">2020 - 2022</span>
+                        <h3>Pre-University</h3>
+                        <h4>Science - PCMS</h4>
+                        <p>PRN Amratha Bharathi PU College, Hebri</p>
+                    </div>
+                    <div class="edu-result">
+                        <span>Percentage</span>
+                        <strong>92.5%</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main certi">
+            <div class="container">
+                <div class="sec-head">
+                    <p id="label">Certificates</p>
+                    <h2>Certificates and Achievements</h2>
+                    <div class="grid">
+                        <div class="card">
+                            <h4>NASA Space Challenge</h4>
+                            <p>Participated and got recognised in the NASA Space App challenge.</p>
+                            <a href="../assets/documents/nasa_certificate.pdf" target="_blank">View Cerificate</a>
+                        </div>
+                        <div class="card">
+                            <h4>Project Intern</h4>
+                            <p>Completed four month Internship from Fidrox Technologies as a Project Intern.</p>
+                            <a href="../assets/documents/Internship_completion_letter.pdf" target="_blank">View Cerificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main intrests">
+            <div class="container">
+                <div class="sec-head">
+                    <p id="label">Interests</p>
+                    <h2> Areas I'm curious about</h2>
+                    <p>The areas I enjoy exploring.</p>
+                </div>
+                <div class="grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <img src="../assets/icons/code.svg">
+                        </div>
+                        <h3>Software Development</h3>
+                        <p>I enjoy building applications, working with APIs and databases, and understanding how different parts of a software system work together.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <img src="../assets/icons/python.svg">
+                        </div>
+                        <h3>Python Programming</h3>
+                        <p>I enjoy writing Python programs, practicing programming concepts, and improving my coding skills through hands-on problems.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <img src="../assets/icons/data.svg">
+                        </div>
+                        <h3>Data Science</h3>
+                        <p>I enjoy exploring data, finding patterns, and using analysis to understand and solve practical problems.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <img src="../assets/icons/cloud.svg">
+                        </div>
+                        <h3>Cloud Computing</h3>
+                        <p>I'm interested in understanding how applications are deployed, hosted, and managed using cloud technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="get-touch">
+            <div class="container">
+                <div class="get-content">
+                    <p id="label">Explore more</p>
+                    <h2>Want to see what I built?</h2>
+                    <p id="summary">Explore my technical skills, experience and projects.</p>
+                    <div class="buttons">
+                        <a href="./projects.html" class="button btn-main">View Projects</a>
+                        <a href="./experience.html" class="button btn-main">View Experience</a>
+                        <a href="./skills.html" class="button btn-main">View Skills</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <div class="container foot-cont">
+                <p>Prajnavi : prajnavimuniyal@gmail.com</p>
+                <div class="foot-links">
+                    <a href="https://github.com/Prajnavi" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/prajnavi-910333322/" target="_blank">LinkedIn</a>
+                    <a href="mailto:prajnavimuniyal@gmail.com">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+        
+</body>
+</html>
