@@ -46,6 +46,7 @@
     display: flex;
     align-items: center;
     padding:90px 5% 100px;
+    justify-content: center;
     /* overflow: hidden; */
 }
 
@@ -337,6 +338,9 @@
 }
 .text-link:hover {
     transform: translateX(4px);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    
 }
 
 /* project */
@@ -439,11 +443,6 @@
 
 
 /* dynamic properties */
-@media (max-width: 1200px) {
-    /* .main .main-container {
-        gap: 50px;
-    } */
-}
 @media (min-width:880px) {
     .main .main-container {
         display: flex;
